@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elgama</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="fileContent_1"></div>
+    <div id="fileContent_2"></div>
+        <div class="contain">
+            <table >
+                <thead>
+                    <tr>
+                        <td><label for="p">p:</label></td>
+                        <td><input type="text" id="p"></td>
+                        <td><label for="x">x:</label></td>
+                        <td><input type="text" id="x"></td>
+                        <td rowspan="2"><input type="button" value="Tạo khóa" onclick="taokhoa()"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="a">a:</label></td>
+                        <td><input type="text" id="a"></td>
+                        <td><label for="y">y:</label></td>
+                        <td><input type="text" id="y"></td>
+                    </tr>
+                </thead>
+               
+            </table>
+            <table >
+                <tbody>
+                    <tr>
+                        <td><label for="tao_chu_ki_so">Tạo chữ kí số:</label> </td>
+                        <td><input type="text" id="tao_chu_ki_so"></td>
+                        <td><input type="file" id='fileInput_1'></td>
+                        <td><input type="button" value="Ký" onclick="ki()"></td>
+                    </tr>
+                    <tr>
+                        <td ><label for="chu_ki_so">Chữ kí số là:</label></td>
+                        <td ><textarea  id="chu_ki_so"></textarea></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="xac_nhan_chu_ki">Xác nhận chữ kí số: </label></td>
+                        <td><input type="text" id="xac_nhan_chu_ki"></td>
+                        <td><input type="file" id='fileInput_2'></td>
+                        <td><input type="button" value="xác nhận" onclick="xac_nhan()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+    
+        <script src="main.js"></script> 
+</body>
+</html>
