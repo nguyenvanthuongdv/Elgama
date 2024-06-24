@@ -193,6 +193,38 @@ document.getElementById('fileInput_2').addEventListener('change', function(event
 
     reader.readAsText(file);  // Đọc file dưới dạng text
 });
+function saveToSecre() {
+
+        const input1 = document.getElementById('p').value;
+        const input2 = document.getElementById('a').value;
+        const input3 = document.getElementById('x').value;
+    
+        const textToSave = `p: ${input1}\na: ${input2}\nx: ${input3}`;
+        const blob = new Blob([textToSave], { type: 'text/plain' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'Khoa_bi_mat.txt';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    
+}
+function saveToPublic() {
+
+    const input1 = document.getElementById('p').value;
+    const input2 = document.getElementById('a').value;
+    const input3 = document.getElementById('y').value;
+
+    const textToSave = `p: ${input1}\na: ${input2}\ny: ${input3}`;
+    const blob = new Blob([textToSave], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'Khoa_cong_khai.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+}
 
 
 

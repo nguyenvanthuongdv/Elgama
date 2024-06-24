@@ -8,6 +8,10 @@ input[type="text"]
 {
     outline:none;
 }
+input[type="password"]
+{
+    outline:none;
+}
 input[type="button"]
 {
     color:white;
